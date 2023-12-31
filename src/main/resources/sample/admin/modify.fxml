@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.modifyService">
+   <center>
+        <AnchorPane prefHeight="400.0" prefWidth="446.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="-3.0" prefHeight="27.0" prefWidth="608.0" style="-fx-background-color: #ffc900;" />
+                <Label fx:id="close" layoutX="577.0" onMouseClicked="#closeWindow" prefHeight="27.0" prefWidth="29.0" style="-fx-background-color: #ff0000;" text="   X" textFill="WHITE" />
+                <Label prefHeight="27.0" prefWidth="203.0" style="-fx-background-color: #ffc900;" text="          Saravana Saloon">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="56.0" text="Service ID" textFill="#ffc900">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="181.0" text="Category" textFill="#ffc900">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="141.0" text="Price" textFill="#ffc900">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="21.0" layoutY="102.0" prefHeight="30.0" prefWidth="134.0" text="Service Name" textFill="#ffc900">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="id" layoutX="174.0" layoutY="58.0" prefHeight="26.0" prefWidth="185.0" promptText="Service ID" />
+                <TextField fx:id="name" layoutX="174.0" layoutY="104.0" prefHeight="26.0" prefWidth="185.0" promptText="Service Name" />
+                <TextField fx:id="price" layoutX="174.0" layoutY="144.0" prefHeight="26.0" prefWidth="187.0" promptText="Price" />
+                <Button fx:id="update" layoutX="102.0" layoutY="280.0" mnemonicParsing="false" onAction="#update_service" prefHeight="23.0" prefWidth="422.0" style="-fx-background-color: #ffc900;" text="Update Service">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="clear" layoutX="102.0" layoutY="317.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="11.0" prefWidth="422.0" style="-fx-background-color: #ffc900;" text="Clear">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="back" layoutX="101.0" layoutY="354.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="34.0" prefWidth="423.0" style="-fx-background-color: #ffc900;" text="Back">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Label fx:id="lab" layoutX="181.0" layoutY="27.0" prefHeight="18.0" prefWidth="239.0" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="search" layoutX="372.0" layoutY="55.0" mnemonicParsing="false" onAction="#search_service" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #ffc900;" text="Search">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="delete" layoutX="488.0" layoutY="55.0" mnemonicParsing="false" onAction="#delete_service" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #ffc900;" text="Delete">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="category" layoutX="174.0" layoutY="184.0" prefHeight="26.0" prefWidth="187.0" />
+            <Button fx:id="addImg" layoutX="174.0" layoutY="219.0" mnemonicParsing="false" onAction="#addImage" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #b9b9b9;" text="Image">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="21.0" layoutY="220.0" text="Image" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="pic" fitHeight="124.0" fitWidth="215.0" layoutX="373.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="imgPath" alignment="TOP_LEFT" layoutX="274.0" layoutY="219.0" prefHeight="58.0" prefWidth="322.0" textFill="#ffc900" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+   </center>
+</BorderPane>

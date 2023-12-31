@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#loadpage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.profilePage">
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="446.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="-3.0" prefHeight="27.0" prefWidth="608.0" style="-fx-background-color: #ffc900;" />
+                <Label fx:id="close" layoutX="577.0" onMouseClicked="#closeWindow" prefHeight="27.0" prefWidth="29.0" style="-fx-background-color: #ff0000;" text="   X" textFill="WHITE" />
+                <Label prefHeight="27.0" prefWidth="203.0" style="-fx-background-color: #ffc900;" text="          Saravana Saloon">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Button fx:id="back" layoutX="102.0" layoutY="342.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="30.0" prefWidth="436.0" style="-fx-background-color: #ffc900;" text="Back">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="username" editable="false" layoutX="316.0" layoutY="94.0" prefHeight="26.0" prefWidth="218.0" />
+            <Label layoutX="102.0" layoutY="92.0" text="User Name" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="129.0" text="Current Password" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="currentPwd" layoutX="316.0" layoutY="131.0" prefHeight="26.0" prefWidth="218.0" promptText="Current Password" />
+            <Label layoutX="102.0" layoutY="166.0" text="New Password" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newPwd" layoutX="316.0" layoutY="168.0" prefHeight="26.0" prefWidth="218.0" promptText="New Password" />
+            <Label layoutX="102.0" layoutY="204.0" text="Re-Enter Password" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rePwd" layoutX="316.0" layoutY="206.0" prefHeight="26.0" prefWidth="218.0" promptText="Re-Enter Password" />
+            <Button fx:id="changepwd" layoutX="102.0" layoutY="254.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="30.0" prefWidth="436.0" style="-fx-background-color: #ffc900;" text="Change Password">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="102.0" layoutY="298.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="30.0" prefWidth="436.0" style="-fx-background-color: #ffc900;" text="Clear all">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="validate" layoutX="316.0" layoutY="67.0" prefHeight="18.0" prefWidth="218.0" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
