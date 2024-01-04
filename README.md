@@ -7,7 +7,7 @@ Welcome to the Saloon Management System Admin Panel. Streamline salon operations
 3. IntelliJ IDEA: Download and install IntelliJ IDEA on your machine.
 
 ## Installation
-Saloon Management System Admin Panel locally, follow these steps:
+To run Saloon Management System Admin Panel locally, follow these steps:
 
 1. Clone the repository: git clone https://github.com/Aththas/saloon-management-system-admin-JAVAFX.git
 2. Setup IntelliJ IDE
